@@ -1,0 +1,7 @@
+catch_exception (true).
+My_wx_dir = code:lib_dir(wx).
+rr (My_wx_dir ++ "/include/wx.hrl").
+rr (My_wx_dir ++ "/src/wxe.hrl").
+Wx=wx:new().
+F=wxFrame:new(Wx, -1, "Hello, World!").
+wxFrame:show(F). 
